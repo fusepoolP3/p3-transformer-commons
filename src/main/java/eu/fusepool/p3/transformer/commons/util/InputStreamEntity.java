@@ -19,6 +19,7 @@ package eu.fusepool.p3.transformer.commons.util;
 import eu.fusepool.p3.transformer.commons.Entity;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.net.URI;
 import org.apache.commons.io.IOUtils;
 
 /**
@@ -30,5 +31,12 @@ public abstract class InputStreamEntity implements Entity {
     public void writeData(OutputStream out) throws IOException {
         IOUtils.copy(getData(), out);
     }
+
+    @Override
+    public URI getContentLocation() {
+        return null;
+    }
+    
+    
     
 }

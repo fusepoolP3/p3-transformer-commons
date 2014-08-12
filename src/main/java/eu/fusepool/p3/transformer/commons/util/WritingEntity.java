@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.net.URI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -49,6 +50,11 @@ public abstract class WritingEntity implements Entity {
             
         }).start();
         return pipedInputStream;
+    }
+    
+    @Override
+    public URI getContentLocation() {
+        return null;
     }
 
     

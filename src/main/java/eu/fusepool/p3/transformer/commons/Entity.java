@@ -19,6 +19,7 @@ package eu.fusepool.p3.transformer.commons;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URI;
 import javax.activation.MimeType;
 
 
@@ -33,6 +34,11 @@ public interface Entity {
      * @return The media type of this entity
      */
     MimeType getType();
+    
+    /**
+     * @return the content location of this entity or null if no location is known
+     */
+    URI getContentLocation();
 
     /**
      * 
