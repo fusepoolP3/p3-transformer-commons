@@ -22,12 +22,31 @@ import java.io.OutputStream;
 import javax.activation.MimeType;
 
 
+/**
+ * Represents a data entity.
+ * 
+ * @author reto
+ */
 public interface Entity {
 
+    /**
+     * @return The media type of this entity
+     */
     MimeType getType();
 
+    /**
+     * 
+     * @return an InputStream from which the content of this entity can be read
+     * @throws IOException 
+     */
     InputStream getData() throws IOException;
     
+    /**
+     * This method writes the content of this Entity to an OutputStream
+     * 
+     * @param out the OutputStream to which the content shall be written
+     * @throws IOException 
+     */
     void writeData(OutputStream out) throws IOException;
     
 }

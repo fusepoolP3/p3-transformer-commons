@@ -25,7 +25,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Use this if you need and create an Entity and want to write data to an OutputStream;
+ * Use this if you want to create an Entity and by writing data to an OutputStream;
  */
 public abstract class WritingEntity implements Entity {
 
