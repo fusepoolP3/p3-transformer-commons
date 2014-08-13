@@ -27,7 +27,7 @@
     <groupId>eu.fusepool.p3</groupId>
     <artifactId>transformer-commons</artifactId>
     <name>Fusepool P3 Platform: Transformer Commons</name>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <licenses>
         <license>
